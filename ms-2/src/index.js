@@ -6,7 +6,7 @@ const app = express();
 
 const port = process.env.PORT || 4002;
 
-console.log(process.env.DB_URL,process.env.PORT)
+console.log(process.env.DB_URL,process.env.PORT,"process")
 
 
 app.use(express.json());
