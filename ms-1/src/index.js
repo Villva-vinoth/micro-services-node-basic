@@ -6,6 +6,8 @@ const app = express()
 
 const port = process.env.PORT || 4001
 
+console.log(process.env.DB_URL,process.env.PORT)
+
 app.use(express.json()) 
 
 initialize()
