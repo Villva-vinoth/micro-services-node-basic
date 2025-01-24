@@ -1,0 +1,26 @@
+{
+  "name": "gateway",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "misc": "concurrently \"npx dotenv -e .env npm run dev\" \"cd ../ms-1 && npx dotenv -e .env npm run dev\" \"cd ../ms-2 && npx dotenv -e .env npm run dev\"",
+    "inst": "npm install && npm install --prefix ../ms-1 && npm install --prefix ../ms-2"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dot-env": "^0.0.1",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-http-proxy": "^2.1.1",
+    "nodemon": "^3.1.9"
+  },
+  "devDependencies": {
+    "dotenv-cli": "^8.0.0"
+  }
+}
